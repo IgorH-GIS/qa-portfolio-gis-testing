@@ -41,7 +41,7 @@ Weryfikacja operacji bazodanowych (podejście szarej skrzynki / grey-box testing
 Weryfikacja zewnętrznych endpointów systemowych przy użyciu metody GET.
 *   **Obsługa zabezpieczeń i wyjątków:** Weryfikacja odpowiedzi serwera przy braku odpowiednich uprawnień klienta (odrzucenie żądania ze statusem `403 Forbidden`).
     ![Błąd 403 Forbidden](16.png)
-*   **Pozytywny test komunikacji:** Ominięcie zabezpieczeń serwera poprzez wstrzyknięcie niestandardowego nagłówka HTTP (`User-Agent`). Serwer poprawnie autoryzuje żądanie i zwraca oczekiwane dane w formacie JSON ze statusem `200 OK`.
+*   **Pozytywny test komunikacji:** Pozytywny test komunikacji: Symulacja zapytania klienckiego poprzez dodanie wymaganego nagłówka HTTP (User-Agent). Weryfikacja, czy serwer poprawnie autoryzuje prawidłowe żądanie i zwraca oczekiwane dane w formacie JSON ze statusem 200 OK.
     ![Sukces 200 OK z nagłówkiem](18.png)
 
 ---
